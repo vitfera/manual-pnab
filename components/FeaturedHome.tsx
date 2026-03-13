@@ -5,7 +5,7 @@ import imgManagers from './img/home/managers.svg';
 
 const roles = [
   {
-    title: 'Agentes Artísticos',
+    title: 'Proponentes',
     image: imgAgents,
     alt: 'Pessoa dançando com o sol ao fundo',
     description:
