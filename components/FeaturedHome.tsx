@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import imgAgents from './img/home/agents.svg';
 import imgManagers from './img/home/managers.svg';
-import imgDevelopers from './img/home/developers.svg';
 
 const roles = [
   {
@@ -24,18 +23,6 @@ const roles = [
     description:
       'Coordenação do processo de editais e iniciativas, publicação dos resultados e monitoramento da execução de editais.',
     link: '/docs/gestores/intro',
-    linkText: 'Saiba mais',
-    bgColor: 'bg-blue-900',
-    textColor: 'text-white',
-    roundedClass: 'lg:rounded-l-[2rem]',
-  },
-  {
-    title: 'Desenvolvedores',
-    image: imgDevelopers,
-    alt: 'Equipe trabalhando com tecnologia e engrenagens',
-    description:
-      'Pessoa responsável por manter a infraestrutura e dar manutenção nas tecnologias digitais utilizadas pela Rede das Artes.',
-    link: '/docs/devs',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
     textColor: 'text-white',
