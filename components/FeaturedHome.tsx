@@ -9,7 +9,7 @@ const roles = [
     image: imgAgents,
     alt: 'Pessoa dançando com o sol ao fundo',
     description:
-      'Pessoas que desejam divulgar a agenda de seus circuitos artísticos, eventos e outras oportunidades.',
+      'Agentes culturais, artistas e produtores que desejam se inscrever em editais da Política Nacional Aldir Blanc e gerenciar suas propostas.',
     link: '/docs/usuarios/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
@@ -17,11 +17,11 @@ const roles = [
     roundedClass: 'lg:rounded-l-[2rem]',
   },
   {
-    title: 'Gestores',
+    title: 'Gestores do Ente Federativo',
     image: imgManagers,
     alt: 'Pintora criando em tela com pincéis',
     description:
-      'Coordenação do processo de editais e iniciativas, publicação dos resultados e monitoramento da execução de editais.',
+      'Servidores de secretarias de cultura estaduais e municipais que publicam editais, avaliam inscrições e acompanham a execução dos projetos selecionados.',
     link: '/docs/gestores/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
