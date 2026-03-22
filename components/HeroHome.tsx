@@ -12,7 +12,7 @@ export default function Example() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
-                href="/docs/usuarios/intro"
+                href="/docs/proponente/intro"
                 className="rounded-md !bg-gray-900 px-3.5 py-2.5 text-sm font-semibold !text-white shadow-xs hover:!bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               >
                 Introdução

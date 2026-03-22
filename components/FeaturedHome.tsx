@@ -10,7 +10,7 @@ const roles = [
     alt: 'Pessoa dançando com o sol ao fundo',
     description:
       'Agentes culturais, artistas e produtores que desejam se inscrever em editais da Política Nacional Aldir Blanc e gerenciar suas propostas.',
-    link: '/docs/usuarios/intro',
+    link: '/docs/proponente/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
     textColor: 'text-white',
