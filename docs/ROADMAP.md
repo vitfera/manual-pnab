@@ -69,7 +69,7 @@ O novo manual é **operacional e contextualizado** para dois atores específicos
 ### 3.2 Seção Gestor do Ente Federativo
 
 **Pasta atual:** `content/docs/gestores/`  
-**Ação:** manter pasta, atualizar `meta.json`
+**Ação:** ~~manter pasta, atualizar `meta.json`~~ → ✅ renomeada para `content/docs/gestor/` (commit `7732901`)
 
 | # | Arquivo | Situação | Ação | Observação |
 |---|---|---|---|---|
@@ -353,13 +353,14 @@ Para migrar as imagens atuais para o novo padrão:
 
 ### Fase 1 — Estrutura e renomeações
 
-- [ ] Renomear pasta `content/docs/usuarios/` → `content/docs/proponente/`
-- [ ] Renomear pasta `content/docs/gestores/` → `content/docs/gestor/`
-- [ ] Atualizar `lib/source.ts` se necessário (baseUrl e coleções)
-- [ ] Atualizar `source.config.ts` apontando para as novas pastas
-- [ ] Atualizar links em `components/FeaturedHome.tsx` (`/docs/usuarios/intro` → `/docs/proponente/intro`, `/docs/gestores/intro` → `/docs/gestor/intro`)
-- [ ] Atualizar link no `components/HeroHome.tsx`
-- [ ] Atualizar `app/layout.config.tsx` se necessário
+- [ ] Renomear pasta `content/docs/usuarios/` → `content/docs/proponente/` — **pendente**
+- [x] Renomear pasta `content/docs/gestores/` → `content/docs/gestor/` ✅ `7732901`
+- [ ] ~~Atualizar `lib/source.ts` se necessário~~ — não necessário (Fumadocs escaneia `content/docs` automaticamente)
+- [ ] ~~Atualizar `source.config.ts` apontando para as novas pastas~~ — não necessário
+- [ ] Atualizar links em `components/FeaturedHome.tsx` para `/docs/proponente/intro` — **aguarda renomeação `usuarios/`**
+- [x] Atualizar link `/docs/gestores/intro` → `/docs/gestor/intro` em `FeaturedHome.tsx` ✅ `7732901`
+- [ ] Atualizar link no `components/HeroHome.tsx` (`/docs/usuarios/intro` → `/docs/proponente/intro`) — **aguarda renomeação `usuarios/`**
+- [ ] `app/layout.config.tsx` — sem alteração necessária
 
 ### Fase 2 — Desmembramento de conteúdo
 
