@@ -8,7 +8,7 @@ export default function Example() {
             <strong>Cult Editais</strong>
             </h2>
             <p className="mt-6 text-lg/8 text-pretty !text-gray-700">
-            Plataforma colaborativa criada para mapear, conectar e fortalecer iniciativas artísticas em todo o Brasil.
+            Plataforma do Ministério da Cultura para publicação e gestão de editais da Política Nacional Aldir Blanc em estados e municípios de todo o Brasil.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
               <a
