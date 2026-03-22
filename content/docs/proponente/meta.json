@@ -1,6 +1,11 @@
 {
-  "title": "Usuários",
-  "description": "Guia completo para navegação e uso da plataforma Rede das Artes",
+  "title": "Proponente",
+  "description": "Guia para proponentes do Cult Editais",
   "root": true,
-  "pages": ["intro", "home", "agents", "opportunities", "projects", "spaces", "events", "---.---", "duvidas-frequentes", "referencias" ]
+  "pages": [
+    "intro",
+    "conta",
+    "agentes",
+    "oportunidades"
+  ]
 }
