@@ -358,23 +358,24 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] Atualizar links em `components/FeaturedHome.tsx` (`/docs/proponente/intro`, `/docs/gestor/intro`) ✅ `5bc9279` / `7732901`
 - [x] Atualizar link no `components/HeroHome.tsx` → `/docs/proponente/intro` ✅ `5bc9279`
 
-### Fase 2 — Desmembramento de conteúdo
+### Fase 2 — Desmembramento de conteúdo ✅ `b1b7c78`
 
-- [ ] Criar `proponente/conta.mdx` a partir de `home.mdx` (criar conta + editar perfil + painel)
-- [ ] Reescrever `proponente/intro.mdx` (remover histórico técnico; focar no proponente)
-- [ ] Remover `welcome.mdx` (conteúdo absorvido)
-- [ ] Remover ou simplificar `home.mdx` para apenas navegação básica (ou excluir completamente)
-- [ ] Avaliar desmembramento de `gerenciar-oportunidades.mdx` (ver seção 5)
+- [x] `proponente/conta.mdx` criado a partir de `home.mdx` (criar conta, edição de perfil, painel de controle) ✅ `b1b7c78`
+- [x] `proponente/intro.mdx` reescrito — foco no proponente / Cult Editais ✅ `b1b7c78`
+- [x] `welcome.mdx` removido ✅ `b1b7c78`
+- [x] `home.mdx` removido (conteúdo absorvido por `conta.mdx`) ✅ `b1b7c78`
+- [x] `projects.mdx`, `spaces.mdx`, `events.mdx` removidos (fora do escopo do proponente) ✅ `b1b7c78`
+- [x] `duvidas-frequentes.mdx`, `referencias.mdx` removidos por ora ✅ `b1b7c78`
+- [x] Imagens das seções removidas deletadas (`02_home/`, `05_events/`, `06_spaces/`, `07_projects/`) ✅ `b1b7c78`
+- [x] `meta.json` atualizado — estrutura final: intro, conta, agentes, oportunidades ✅ `b1b7c78`
+- [ ] ~~Avaliar desmembramento de `gerenciar-oportunidades.mdx`~~ — ver seção gestor
 
-### Fase 3 — Renomeação de arquivos MDX
+### Fase 3 — Renomeação de arquivos MDX ✅ `b1b7c78`
 
-- [ ] `agents.mdx` → `agentes.mdx`
-- [ ] `opportunities.mdx` → `oportunidades.mdx`
-- [ ] `projects.mdx` → `iniciativas.mdx`
-- [ ] `spaces.mdx` → `espacos.mdx`
-- [ ] `events.mdx` → `eventos.mdx`
-- [ ] Atualizar `meta.json` da seção proponente com novos slugs
-- [ ] `gerenciar-projetos.mdx` → `gerenciar-iniciativas.mdx` (quando criado)
+- [x] `agents.mdx` → `agentes.mdx` ✅ `b1b7c78`
+- [x] `opportunities.mdx` → `oportunidades.mdx` ✅ `b1b7c78`
+- [x] `projects.mdx`, `spaces.mdx`, `events.mdx` — removidos, não renomeados ✅ `b1b7c78`
+- [x] `meta.json` atualizado com novos slugs ✅ `b1b7c78`
 
 ### Fase 4 — Migração de imagens
 
