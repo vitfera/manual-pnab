@@ -7,25 +7,42 @@
 
 ---
 
-## 1. Mudança de foco
+## 1. O que é o Cult Editais
 
 > ⚠️ **O produto foi renomeado de "Rede das Artes" para "Cult Editais"** (commits `da480b9`, `90b77da`, `c5db20e` — 19/03/2026). Todas as referências ao nome antigo no conteúdo e no código devem ser atualizadas.
 
-O manual atual cobre a plataforma de forma genérica (actor "Usuário" + "Gestor Funarte").  
-O novo manual terá foco **operacional e contextualizado** para:
+O **Cult Editais** é uma plataforma digital do Ministério da Cultura (MinC) que permite que **estados e municípios publiquem e gerenciem seus próprios editais da Política Nacional Aldir Blanc** em um ambiente unificado. O sistema foi desenhado para otimizar todo o ciclo de vida de um edital:
 
-| Ator | Quem é | O que precisa no manual |
-|---|---|---|
-| **Proponente** | Pessoa física ou coletivo (agente cultural, artista, produtor) que usa a plataforma para se cadastrar, submeter inscrições, registrar espaços e eventos | Como participar, inscrever-se, gerenciar seu perfil e suas produções |
-| **Gestor do Ente Federativo** | Servidor ou responsável em secretaria de cultura estadual/municipal que **opera a plataforma** em seu território | Como criar e gerir oportunidades, avaliar inscrições, gerar relatórios, configurar a plataforma |
+1. **Divulgação** do edital
+2. **Inscrição** dos proponentes
+3. **Seleção** dos projetos
+4. **Monitoramento** da execução
+5. **Prestação de contas**
 
-> **Nota:** o perfil "Gestor Funarte/MinC" (atual) será **generalizado** para qualquer ente federativo. Referências institucionais específicas da Funarte devem ser removidas ou tornadas genéricas.
+A ferramenta é integrada ao **CultBR**, facilitando o envio de dados ao **SNIIC** (Sistema Nacional de Informações e Indicadores Culturais), fortalecendo a capacidade do governo de gerar dados qualificados sobre o impacto das políticas culturais.
+
+> *"Ao disponibilizar esta ferramenta digital, buscamos proporcionar uma significativa economia de tempo e de recursos para os entes federativos. A expectativa é que essa otimização permita que um volume maior de recursos da Política Nacional Aldir Blanc seja direcionado aos agentes culturais."*  
+> — Teresa Labrunie, coordenadora-Geral de Análise e Articulação de Políticas Culturais do MinC
 
 ---
 
-## 2. Nova estrutura de conteúdo
+## 2. Mudança de foco do manual
 
-### 2.1 Seção Proponente
+O manual anterior cobria a plataforma (Mapas Culturais / Rede das Artes) de forma genérica.  
+O novo manual é **operacional e contextualizado** para dois atores específicos do Cult Editais:
+
+| Ator | Quem é | O que precisa no manual |
+|---|---|---|
+| **Proponente** | Agente cultural (pessoa física ou coletivo) que se cadastra na plataforma e se inscreve nos editais da Política Nacional Aldir Blanc | Como criar conta, montar perfil, encontrar e se inscrever em editais, acompanhar resultados e prestação de contas |
+| **Gestor do Ente Federativo** | Servidor de secretaria de cultura estadual ou municipal que **lança editais, realiza as avaliações e conduz todo o fluxo** na plataforma | Como criar e publicar editais, configurar fases, avaliar inscrições, gerar relatórios e acompanhar a execução |
+
+> **Nota:** referências ao perfil "Gestor Funarte/MinC" ou à "Rede das Artes" devem ser removidas ou generalizadas para qualquer ente federativo da Política Nacional Aldir Blanc.
+
+---
+
+## 3. Nova estrutura de conteúdo
+
+### 3.1 Seção Proponente
 
 **Pasta atual:** `content/docs/usuarios/`  
 **Ação:** renomear para `content/docs/proponente/`
@@ -49,7 +66,7 @@ O novo manual terá foco **operacional e contextualizado** para:
 
 ---
 
-### 2.2 Seção Gestor do Ente Federativo
+### 3.2 Seção Gestor do Ente Federativo
 
 **Pasta atual:** `content/docs/gestores/`  
 **Ação:** manter pasta, atualizar `meta.json`
@@ -71,33 +88,35 @@ O novo manual terá foco **operacional e contextualizado** para:
 
 ---
 
-## 3. Partes que saem do manual
+## 4. Partes que saem do manual
 
 | Conteúdo | Motivo |
 |---|---|
-| Histórico completo do Mapas (2004, Mapsys, Hacklab, versões) | Não é conteúdo operacional; pode virar nota de rodapé ou link externo |
+| Histórico completo do Mapas (2004, Mapsys, Hacklab, versões) | Não é conteúdo operacional do Cult Editais; pode virar nota de rodapé ou link externo |
 | `welcome.mdx` (seção usuários) | Redundante com `intro.mdx`; conteúdo de onboarding absorvido |
-| Navegação geral da home (`home.mdx` > parte de abas/agenda) | Contexto da plataforma; simplificar para o proponente ir direto ao ponto |
-| Referências a Funarte como ente específico em `gestores/intro.mdx` | Generalizar para secretarias estaduais/municipais |
-| Partes da seção gestores focadas exclusivamente no workflow Funarte/PNAB | Generalizar para workflows de qualquer edital público |
+| Navegação geral da home (`home.mdx` > parte de abas/agenda) | Contexto da plataforma anterior; o Cult Editais tem foco em editais/inscrições |
+| Referências a "Rede das Artes", "Mapas Culturais" como produto principal | Substituir por "Cult Editais" |
+| Referências a Funarte como ente específico em `gestores/intro.mdx` | Generalizar para secretarias estaduais/municipais da Política Nacional Aldir Blanc |
+| Partes da seção gestores focadas exclusivamente no workflow Funarte/PNAB | Generalizar para workflows de qualquer edital da Política Nacional Aldir Blanc |
 
 ---
 
-## 4. Partes que entram no manual
+## 5. Partes que entram no manual
 
 | Conteúdo | Seção | Observação |
 |---|---|---|
-| Como criar uma conta (desmembrado de `home.mdx`) | Proponente | Passo a passo de acesso e configuração inicial do perfil |
+| Como criar uma conta (desmembrado de `home.mdx`) | Proponente | Passo a passo de acesso e configuração inicial do perfil no Cult Editais |
+| Fluxo de inscrição em edital da Política Nacional Aldir Blanc | Proponente | Fortalecer seção de oportunidades com esse contexto |
 | Gerenciar agentes do território | Gestor | Novo arquivo; imagens precisam ser capturadas |
 | Gerenciar espaços do território | Gestor | Novo arquivo; imagens precisam ser capturadas |
 | Gerenciar eventos do território | Gestor | Novo arquivo; imagens precisam ser capturadas |
 | Gerenciar iniciativas do território | Gestor | Novo arquivo; imagens precisam ser capturadas |
-| Relatórios e métricas | Gestor | Novo arquivo; imagens precisam ser capturadas |
+| Relatórios e métricas | Gestor | Novo arquivo; inclui envio ao SNIIC via CultBR |
 | Configurações da plataforma | Gestor | Novo arquivo; imagens precisam ser capturadas |
 
 ---
 
-## 5. Partes que precisam ser desmembradas
+## 6. Partes que precisam ser desmembradas
 
 | Arquivo atual | Desmembrar em | Critério |
 |---|---|---|
@@ -106,7 +125,7 @@ O novo manual terá foco **operacional e contextualizado** para:
 
 ---
 
-## 6. Padrão de nomenclatura de imagens
+## 7. Padrão de nomenclatura de imagens
 
 ### Padrão proposto
 
@@ -172,7 +191,7 @@ content/docs/gestor/img/
 
 ---
 
-## 7. Mapeamento de renomeação de pastas (imagens existentes)
+## 8. Mapeamento de renomeação de pastas (imagens existentes)
 
 Para migrar as imagens atuais para o novo padrão:
 
@@ -211,14 +230,14 @@ Para migrar as imagens atuais para o novo padrão:
 
 ---
 
-## 8. Nova estrutura de navegação (`meta.json`)
+## 9. Nova estrutura de navegação (`meta.json`)
 
 ### `content/docs/proponente/meta.json`
 
 ```json
 {
   "title": "Proponente",
-  "description": "Guia para proponentes da plataforma Rede das Artes",
+  "description": "Guia para proponentes do Cult Editais",
   "root": true,
   "pages": [
     "intro",
@@ -240,7 +259,7 @@ Para migrar as imagens atuais para o novo padrão:
 ```json
 {
   "title": "Gestor",
-  "description": "Guia para gestores de entes federativos na plataforma Rede das Artes",
+  "description": "Guia para gestores de entes federativos no Cult Editais",
   "root": true,
   "pages": [
     "intro",
@@ -261,7 +280,7 @@ Para migrar as imagens atuais para o novo padrão:
 
 ---
 
-## 9. Checklist de execução
+## 10. Checklist de execução
 
 ### Fase 0 — Layout, identidade visual e configurações globais
 
@@ -295,8 +314,8 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [x] ~~Atualizar título e subtítulo do hero~~ — ✅ Título atualizado para **"Cult Editais"**, cores ajustadas para fundo claro (`!text-gray-900` / `!text-gray-700`), botão invertido (commit `90b77da`)
 - [x] ~~Trocar imagem de fundo `bg-home-hero.png`~~ — ✅ Nova imagem aplicada (commit `90b77da`)
+- [x] ~~Atualizar subtítulo do hero~~ — ✅ Novo texto refletindo Cult Editais e Política Nacional Aldir Blanc (commit `c832c4e`)
 - [ ] Trocar link do botão "Introdução" (`/docs/usuarios/intro` → `/docs/proponente/intro`) — **depende da Fase 1**
-- [ ] Atualizar subtítulo do hero — ainda descreve "Rede das Artes", deve refletir o Cult Editais
 - [ ] Avaliar acrescentar botão secundário "Sou Gestor" direto no hero para atalho rápido
 
 #### 0.4 Página inicial — Cards de papéis (`components/FeaturedHome.tsx`)
@@ -312,8 +331,8 @@ Para migrar as imagens atuais para o novo padrão:
 #### 0.5 Rodapé (`components/Footer.tsx`)
 
 - [x] ~~Simplificar rodapé com logo unificada~~ — ✅ 14 logos antigas removidas, `SNC+PNAB+MinC+Gov.png` centralizada (commit `d2fffeb`)
+- [x] ~~Atualizar texto institucional (ainda mencionava "Rede das Artes" e ano "2025")~~ — ✅ Novo texto refletindo Cult Editais e Política Nacional Aldir Blanc (commit `c832c4e`)
 - [ ] Confirmar se `SNC+PNAB+MinC+Gov.png` é a versão/ano correto para Cult Editais
-- [ ] Atualizar texto institucional (ainda menciona "Rede das Artes" e ano "2025" — revisar)
 - [ ] Avaliar acrescentar links úteis no rodapé (ex.: plataforma, repositório, suporte)
 
 #### 0.6 Tema e tipografia (`app/global.css` / `app/layout.tsx`)
@@ -328,7 +347,7 @@ Para migrar as imagens atuais para o novo padrão:
 
 ---
 
-> **Status da Fase 0:** 🟡 Em andamento — identidade visual principal concluída; pendências de textos, links e configurações globais
+> **Status da Fase 0:** 🟡 Em andamento — identidade visual e textos principais concluídos; pendente: logo rodapé, links de navegação superiores, lang, tema e débito técnico de tradução
 
 ---
 
@@ -388,7 +407,7 @@ Para migrar as imagens atuais para o novo padrão:
 
 ---
 
-## 10. Pendências para complementar neste roadmap
+## 11. Pendências para complementar neste roadmap
 
 > *O usuário irá complementar os itens abaixo:*
 
