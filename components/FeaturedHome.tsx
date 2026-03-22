@@ -22,7 +22,7 @@ const roles = [
     alt: 'Pintora criando em tela com pincéis',
     description:
       'Servidores de secretarias de cultura estaduais e municipais que publicam editais, avaliam inscrições e acompanham a execução dos projetos selecionados.',
-    link: '/docs/gestores/intro',
+    link: '/docs/gestor/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
     textColor: 'text-white',
