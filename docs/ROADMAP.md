@@ -368,7 +368,6 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] `duvidas-frequentes.mdx`, `referencias.mdx` removidos por ora ✅ `b1b7c78`
 - [x] Imagens das seções removidas deletadas (`02_home/`, `05_events/`, `06_spaces/`, `07_projects/`) ✅ `b1b7c78`
 - [x] `meta.json` atualizado — estrutura final: intro, conta, agentes, oportunidades ✅ `b1b7c78`
-- [ ] ~~Avaliar desmembramento de `gerenciar-oportunidades.mdx`~~ — ver seção gestor
 
 ### Fase 3 — Renomeação de arquivos MDX ✅ `b1b7c78`
 
@@ -377,14 +376,70 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] `projects.mdx`, `spaces.mdx`, `events.mdx` — removidos, não renomeados ✅ `b1b7c78`
 - [x] `meta.json` atualizado com novos slugs ✅ `b1b7c78`
 
-### Fase 4 — Migração de imagens
+### Fase 4 — Conteúdo: Proponente
 
-- [ ] Reorganizar pastas de imagens do proponente conforme mapeamento (seção 7)
-- [ ] Reorganizar pastas de imagens do gestor conforme mapeamento (seção 7)
-- [ ] Atualizar todos os `src` de imagens nos arquivos MDX após renomeação
-- [ ] Aplicar padrão de nomenclatura `icon.svg` para ícones de seção
+> **Escopo:** todos os arquivos MDX de `content/docs/proponente/` e suas imagens.
 
-### Fase 5 — Criação de novo conteúdo
+#### 4.1 Estrutura e imagens
+
+- [x] Reorganizar pastas de imagens do proponente — `01_intro/`, `02_conta/`, `03_agentes/`, `04_oportunidades/` ✅ `5164d20`
+- [x] Atualizar `src` de imagens em `agentes.mdx` e `oportunidades.mdx` após renomeação ✅ `5164d20`
+
+#### 4.2 `intro.mdx`
+
+- [x] Reescrever — foco no proponente e Cult Editais ✅ `b1b7c78`
+- [x] Adicionar links de navegação para conta, agentes e oportunidades ✅ `a294a70`
+- [ ] Revisar imagens em `01_intro/` — verificar se são adequadas para o novo texto
+
+#### 4.3 `conta.mdx`
+
+- [x] Criar arquivo e estrutura inicial ✅ `b1b7c78`
+- [x] Documentar fluxo de login via gov.br (5 passos com imagens) ✅ `6d92f51`
+- [x] Documentar painel de controle com imagem ✅ `6d92f51`
+- [ ] Documentar edição de informações do perfil (imagens pendentes)
+- [ ] Documentar seção "Conta e Privacidade"
+
+#### 4.4 `agentes.mdx`
+
+- [x] Renomear de `agents.mdx` ✅ `b1b7c78`
+- [x] Atualizar referências de imagens para `03_agentes/` ✅ `5164d20`
+- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+
+#### 4.5 `oportunidades.mdx`
+
+- [x] Renomear de `opportunities.mdx` ✅ `b1b7c78`
+- [x] Atualizar referências de imagens para `04_oportunidades/` ✅ `5164d20`
+- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+
+---
+
+### Fase 5 — Conteúdo: Gestor do Ente Federativo
+
+> **Escopo:** todos os arquivos MDX de `content/docs/gestor/` e suas imagens.
+
+#### 5.1 Estrutura e imagens
+
+- [ ] Reorganizar pastas de imagens do gestor (renomear para padrão `01_intro/`, `02_painel-controle/`, `03_oportunidades/` etc.)
+- [ ] Atualizar todos os `src` de imagens nos arquivos MDX do gestor após renomeação
+- [ ] Atualizar `meta.json` com a estrutura final de páginas do gestor
+
+#### 5.2 `intro.mdx`
+
+- [ ] Remover referências específicas à Funarte
+- [ ] Reescrever — foco no gestor do ente federativo e Cult Editais
+- [ ] Adicionar links de navegação para as demais seções do gestor
+
+#### 5.3 `painel-controle.mdx`
+
+- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+- [ ] Atualizar imagens se necessário
+
+#### 5.4 `gerenciar-oportunidades.mdx`
+
+- [ ] Definir se mantém como está, desmembra em subpáginas ou reestrutura
+- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+
+#### 5.5 Novos arquivos (a criar)
 
 - [ ] `gestor/gerenciar-agentes.mdx` — capturar imagens + escrever
 - [ ] `gestor/gerenciar-espacos.mdx` — capturar imagens + escrever
@@ -392,14 +447,14 @@ Para migrar as imagens atuais para o novo padrão:
 - [ ] `gestor/gerenciar-iniciativas.mdx` — capturar imagens + escrever
 - [ ] `gestor/relatorios-metricas.mdx` — capturar imagens + escrever
 - [ ] `gestor/configuracoes-plataforma.mdx` — capturar imagens + escrever
-- [ ] Revisar `duvidas-frequentes.mdx` de ambas as seções
-- [ ] Atualizar `README.md` com conteúdo real do projeto
+
+---
 
 ### Fase 6 — Revisão e ajustes finais
 
-- [ ] Remover referências específicas à Funarte em `gestor/intro.mdx`
-- [ ] Padronizar terminologia: "iniciativa" (não "projeto"), "proponente" (não "usuário"), "gestor do ente" (não "gestor cultural" genericamente)
-- [ ] Revisar metadados de cada página (`title`, `description` no frontmatter MDX)
+- [ ] Padronizar terminologia global: "iniciativa" (não "projeto"), "proponente" (não "usuário"), "gestor do ente" (não "gestor cultural" genericamente)
+- [ ] Revisar metadados de cada página (`title`, `description` no frontmatter MDX) — proponente e gestor
+- [ ] Atualizar `README.md` com conteúdo real do projeto
 - [ ] Testar build completo
 - [ ] Verificar busca full-text nas novas rotas
 
