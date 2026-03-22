@@ -425,10 +425,11 @@ Para migrar as imagens atuais para o novo padrão:
 
 > **Escopo:** todos os arquivos MDX de `content/docs/gestor/` e suas imagens.
 
-#### 5.1 Estrutura e imagens
+#### 5.1 Estrutura e imagens ✅ `cd75919`
 
-- [ ] Reorganizar pastas de imagens do gestor (renomear para padrão `01_intro/`, `02_painel-controle/`, `03_oportunidades/` etc.)
-- [ ] Atualizar todos os `src` de imagens nos arquivos MDX do gestor após renomeação
+- [x] Reorganizar pastas de imagens do gestor — `01_intro/`, `02_conta/`, `03_criar-oportunidade/`, `04_gerenciar-oportunidades/` ✅ `cd75919`
+- [x] Aplanar subpastas de `03_oportunidades/03_01/` a `03_05/` em `04_gerenciar-oportunidades/` ✅ `cd75919`
+- [x] Atualizar todos os `src` de imagens nos arquivos MDX do gestor após renomeação ✅ `cd75919`
 - [x] Atualizar `meta.json` com a estrutura de páginas do gestor ✅ `97b7136`
 - [x] Remover `duvidas-frequentes.mdx` e `referencias.mdx` por ora ✅ `97b7136`
 
