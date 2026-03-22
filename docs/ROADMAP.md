@@ -399,13 +399,21 @@ Para migrar as imagens atuais para o novo padrão:
 - [ ] Documentar edição de informações do perfil (imagens pendentes)
 - [ ] Documentar seção "Conta e Privacidade"
 
-#### 4.4 `agentes.mdx`
+#### 4.4 `agentes.mdx` ✅ `c40ec68`
 
 - [x] Renomear de `agents.mdx` ✅ `b1b7c78`
 - [x] Atualizar referências de imagens para `03_agentes/` ✅ `5164d20`
-- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+- [x] Reescrever título e heading: "Meus Agentes" ✅ `1f4ee86`
+- [x] Renomear prefixos de imagem `04_` → `03_` ✅ `1f4ee86`
+- [x] Reescrever conteúdo — foco em criação e edição de agentes individual e coletivo ✅ `c40ec68`
+- [x] Documentar tipos de agente (individual por CPF / coletivo criado manualmente) ✅ `c40ec68`
+- [x] Documentar fluxo de criação de agente coletivo com imagens ✅ `c40ec68`
+- [x] Documentar campos de edição do agente individual e coletivo com tabelas ✅ `c40ec68`
+- [x] Remover imagens não utilizadas (`03_02/`, `03_03/`) ✅ `c40ec68`
 
 #### 4.5 `oportunidades.mdx`
+
+> ⏸️ **Adiado** — depende da seção Gestor (criação de oportunidades) ser documentada primeiro.
 
 - [x] Renomear de `opportunities.mdx` ✅ `b1b7c78`
 - [x] Atualizar referências de imagens para `04_oportunidades/` ✅ `5164d20`
