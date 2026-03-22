@@ -322,10 +322,10 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [x] ~~Remover card e importação de `developers.svg`~~ — ✅ Módulo desenvolvedores removido por completo (commit `9466b94`)
 - [x] ~~Atualizar título "Agentes Artísticos"~~ → ✅ Renomeado para **"Proponentes"** (commit `97e5a37`)
-- [ ] Atualizar título "Gestores" → "Gestor do Ente Federativo" ou nomenclatura definida
-- [ ] Atualizar descrição do card Proponentes (atual: "divulgar agenda de circuitos artísticos" — rever foco para inscrição em editais)
-- [ ] Atualizar descrição do card Gestores (atual genérica — rever para ente federativo)
-- [ ] Atualizar links: `/docs/usuarios/intro` → `/docs/proponente/intro` e `/docs/gestores/intro` → `/docs/gestor/intro` — **depende da Fase 1**
+- [x] Atualizar título "Gestores" → "Gestores do Ente Federativo" ✅
+- [x] Atualizar descrição do card Proponentes → foco em inscrição em editais PNAB ✅
+- [x] Atualizar descrição do card Gestores → servidores de secretarias estaduais/municipais ✅
+- [ ] Atualizar links: `/docs/usuarios/intro` → `/docs/proponente/intro` e `/docs/gestores/intro` → `/docs/gestor/intro` — **aguarda Fase 1**
 - [ ] Avaliar substituição das ilustrações `agents.svg` e `managers.svg`
 
 #### 0.5 Rodapé (`components/Footer.tsx`)
