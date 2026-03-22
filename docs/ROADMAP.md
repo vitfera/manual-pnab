@@ -429,22 +429,34 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [ ] Reorganizar pastas de imagens do gestor (renomear para padrão `01_intro/`, `02_painel-controle/`, `03_oportunidades/` etc.)
 - [ ] Atualizar todos os `src` de imagens nos arquivos MDX do gestor após renomeação
-- [ ] Atualizar `meta.json` com a estrutura final de páginas do gestor
+- [x] Atualizar `meta.json` com a estrutura de páginas do gestor ✅ `97b7136`
+- [x] Remover `duvidas-frequentes.mdx` e `referencias.mdx` por ora ✅ `97b7136`
 
-#### 5.2 `intro.mdx`
+#### 5.2 `intro.mdx` ✅ `2421d59`
 
-- [ ] Remover referências específicas à Funarte
-- [ ] Reescrever — foco no gestor do ente federativo e Cult Editais
-- [ ] Adicionar links de navegação para as demais seções do gestor
+- [x] Remover referências específicas à Funarte ✅ `2421d59`
+- [x] Reescrever — foco no gestor do ente federativo e Cult Editais ✅ `2421d59`
+- [x] Adicionar links de navegação para as demais seções do gestor ✅ `97b7136`
 
-#### 5.3 `painel-controle.mdx`
+#### 5.2b `conta.mdx` ✅ `2421d59`
 
-- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
-- [ ] Atualizar imagens se necessário
+- [x] Criar arquivo a partir do fluxo de login via gov.br ✅ `2421d59`
+- [x] Documentar fluxo de login (5 passos com imagens) ✅ `2421d59`
+- [x] Adicionar imagens em `gestor/img/02_conta/` ✅ `2421d59`
+
+#### 5.3 ~~`painel-controle.mdx`~~ → `criar-oportunidade.mdx` ✅ `97b7136`
+
+- [x] Renomear `painel-controle.mdx` → `criar-oportunidade.mdx` ✅ `97b7136`
+- [x] Atualizar frontmatter (título: "Criar Oportunidade") ✅ `97b7136`
+- [x] Remover seções fictícias (filtros, notificações) ✅ `97b7136`
+- [x] Adequar terminologia e fluxo para Cult Editais ✅ `97b7136`
+- [x] Atualizar `meta.json` e links em `intro.mdx` ✅ `97b7136`
 
 #### 5.4 `gerenciar-oportunidades.mdx`
 
 - [ ] Definir se mantém como está, desmembra em subpáginas ou reestrutura
+- [ ] Remover prefixos numéricos nos headings
+- [ ] Substituir "Rede das Artes" → "Cult Editais"
 - [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
 
 #### 5.5 Novos arquivos (a criar)
