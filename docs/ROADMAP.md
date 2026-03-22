@@ -315,7 +315,7 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] ~~Atualizar título e subtítulo do hero~~ — ✅ Título atualizado para **"Cult Editais"**, cores ajustadas para fundo claro (`!text-gray-900` / `!text-gray-700`), botão invertido (commit `90b77da`)
 - [x] ~~Trocar imagem de fundo `bg-home-hero.png`~~ — ✅ Nova imagem aplicada (commit `90b77da`)
 - [x] ~~Atualizar subtítulo do hero~~ — ✅ Novo texto refletindo Cult Editais e Política Nacional Aldir Blanc (commit `c832c4e`)
-- [ ] Trocar link do botão "Introdução" (`/docs/usuarios/intro` → `/docs/proponente/intro`) — **depende da Fase 1**
+- [x] Trocar link do botão "Introdução" → `/docs/proponente/intro` ✅ `5bc9279`
 - [ ] Avaliar acrescentar botão secundário "Sou Gestor" direto no hero para atalho rápido
 
 #### 0.4 Página inicial — Cards de papéis (`components/FeaturedHome.tsx`)
@@ -325,7 +325,7 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] Atualizar título "Gestores" → "Gestores do Ente Federativo" ✅ `5ed3704`
 - [x] Atualizar descrição do card Proponentes → foco em inscrição em editais PNAB ✅ `5ed3704`
 - [x] Atualizar descrição do card Gestores → servidores de secretarias estaduais/municipais ✅ `5ed3704`
-- [ ] Atualizar links: `/docs/usuarios/intro` → `/docs/proponente/intro` e `/docs/gestores/intro` → `/docs/gestor/intro` — **aguarda Fase 1**
+- [x] Atualizar links: `/docs/proponente/intro` e `/docs/gestor/intro` em `FeaturedHome.tsx` ✅ `5bc9279` / `7732901`
 - [ ] Avaliar substituição das ilustrações `agents.svg` e `managers.svg`
 
 #### 0.5 Rodapé (`components/Footer.tsx`)
@@ -351,16 +351,12 @@ Para migrar as imagens atuais para o novo padrão:
 
 ---
 
-### Fase 1 — Estrutura e renomeações
+### Fase 1 — Estrutura e renomeações ✅
 
-- [ ] Renomear pasta `content/docs/usuarios/` → `content/docs/proponente/` — **pendente**
+- [x] Renomear pasta `content/docs/usuarios/` → `content/docs/proponente/` ✅ `5bc9279`
 - [x] Renomear pasta `content/docs/gestores/` → `content/docs/gestor/` ✅ `7732901`
-- [ ] ~~Atualizar `lib/source.ts` se necessário~~ — não necessário (Fumadocs escaneia `content/docs` automaticamente)
-- [ ] ~~Atualizar `source.config.ts` apontando para as novas pastas~~ — não necessário
-- [ ] Atualizar links em `components/FeaturedHome.tsx` para `/docs/proponente/intro` — **aguarda renomeação `usuarios/`**
-- [x] Atualizar link `/docs/gestores/intro` → `/docs/gestor/intro` em `FeaturedHome.tsx` ✅ `7732901`
-- [ ] Atualizar link no `components/HeroHome.tsx` (`/docs/usuarios/intro` → `/docs/proponente/intro`) — **aguarda renomeação `usuarios/`**
-- [ ] `app/layout.config.tsx` — sem alteração necessária
+- [x] Atualizar links em `components/FeaturedHome.tsx` (`/docs/proponente/intro`, `/docs/gestor/intro`) ✅ `5bc9279` / `7732901`
+- [x] Atualizar link no `components/HeroHome.tsx` → `/docs/proponente/intro` ✅ `5bc9279`
 
 ### Fase 2 — Desmembramento de conteúdo
 
