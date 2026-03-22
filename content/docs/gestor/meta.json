@@ -4,10 +4,8 @@
     "root": true,
     "pages": [
         "intro",
+        "conta",
         "painel-controle",
-        "gerenciar-oportunidades",
-        "---.---",
-        "duvidas-frequentes",
-        "referencias"
+        "gerenciar-oportunidades"
     ]
 }
