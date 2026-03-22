@@ -1,12 +1,15 @@
 # Roadmap de Reestruturação — Manual Rede das Artes
 
-> **Criado em:** 16 de março de 2026  
+> **Criado em:** 16 de março de 2026 · **Atualizado em:** 22 de março de 2026  
 > **Base:** `LEVANTAMENTO.md`  
-> **Objetivo:** Reestruturar o manual para dois atores específicos: **Proponente** e **Gestor do Ente Federativo**
+> **Objetivo:** Reestruturar o manual para dois atores específicos: **Proponente** e **Gestor do Ente Federativo**  
+> **Nome do produto:** ~~Rede das Artes~~ → **Cult Editais** (renomeado em 19/03/2026)
 
 ---
 
 ## 1. Mudança de foco
+
+> ⚠️ **O produto foi renomeado de "Rede das Artes" para "Cult Editais"** (commits `da480b9`, `90b77da`, `c5db20e` — 19/03/2026). Todas as referências ao nome antigo no conteúdo e no código devem ser atualizadas.
 
 O manual atual cobre a plataforma de forma genérica (actor "Usuário" + "Gestor Funarte").  
 O novo manual terá foco **operacional e contextualizado** para:
@@ -266,57 +269,66 @@ Para migrar as imagens atuais para o novo padrão:
 
 #### 0.1 Identidade visual — logos e marcas
 
-| Item | Situação atual | Ação |
+| Item | Situação | Ação |
 |---|---|---|
-| `public/svg/dark-logo-rede-das-artes.svg` | Logo "Rede das Artes" para tema claro | **Avaliar** se mantém ou substitui pela identidade PNAB |
-| `public/svg/light-logo-rede-das-artes.svg` | Logo "Rede das Artes" para tema escuro | **Avaliar** idem |
-| `public/img/dark-logo-rede-mapas-squared.png` | Logo quadrado (não usado atualmente na navbar) | — |
-| `public/img/light-logo-rede-mapas-squared.png` | Logo quadrado (não usado atualmente na navbar) | — |
-| `public/img/bg-home-hero.png` | Imagem de fundo do hero | **Substituir** ou redesenhar conforme nova identidade |
-| `components/img/SNC+PNAB+MinC+Gov.png` | Logo institucional no rodapé | **Confirmar** se mantém ou atualiza (ano 2025 hardcoded no texto) |
-| `components/img/home/agents.svg` | Ilustração card "Proponentes" | **Avaliar** substituição |
-| `components/img/home/managers.svg` | Ilustração card "Gestores" | **Avaliar** substituição |
-| `components/img/home/developers.svg` | Ilustração "Desenvolvedoras" (importada mas não usada) | **Remover** do projeto |
+| ~~`public/svg/dark-logo-rede-das-artes.svg`~~ | ✅ **Removido** (commit `c5db20e`) | Substituído por `public/img/cultbr-fundo-claro.png` |
+| ~~`public/svg/light-logo-rede-das-artes.svg`~~ | ✅ **Removido** (commit `c5db20e`) | Substituído por `public/img/cultbr-fundo-escuro.png` |
+| `public/img/cultbr-fundo-claro.png` | ✅ **Criado** — logo Cult Editais para tema claro | Em uso na navbar |
+| `public/img/cultbr-fundo-escuro.png` | ✅ **Criado** — logo Cult Editais para tema escuro | Em uso na navbar |
+| `public/img/dark-logo-rede-mapas-squared.png` | ⚠️ Ainda presente, não usado | Avaliar remoção |
+| `public/img/light-logo-rede-mapas-squared.png` | ⚠️ Ainda presente, não usado | Avaliar remoção |
+| `public/img/bg-home-hero.png` | ✅ **Substituído** (commit `90b77da`) | Nova imagem aplicada |
+| `components/img/SNC+PNAB+MinC+Gov.png` | ✅ **Aplicado** — logo unificada no rodapé (commit `d2fffeb`) | Confirmar se é versão/ano correto |
+| `components/img/home/agents.svg` | ⏳ Ainda em uso no card Proponentes | Avaliar substituição |
+| `components/img/home/managers.svg` | ⏳ Ainda em uso no card Gestores | Avaliar substituição |
+| ~~`components/img/home/developers.svg`~~ | ✅ **Removido** do projeto (commit `9466b94`) | — |
 
 #### 0.2 Navbar e configuração global (`app/layout.config.tsx`)
 
-- [ ] Definir e posicionar logo final na navbar (atualmente: logo SVG claro/escuro + texto `<h1>Manual Rede das Artes</h1>`)
-- [ ] Confirmar título do site exibido na navbar — atualizar se o nome mudar
-- [ ] Confirmar URL do GitHub (`githubUrl`) — atualmente aponta para `redemapas/manual`
+- [x] ~~Definir e posicionar logo final na navbar~~ — ✅ Logo Cult Editais aplicada (commit `da480b9`): `cultbr-fundo-claro.png` / `cultbr-fundo-escuro.png`, título `<h1>Manual Cult Editais</h1>`
+- [x] ~~Confirmar título do site exibido na navbar~~ — ✅ Atualizado para **"Manual Cult Editais"** (commit `da480b9`)
+- [ ] Confirmar URL do GitHub (`githubUrl`) — atualmente ainda aponta para `redemapas/manual`, verificar se muda
 - [ ] Avaliar ativar os links de navegação superiores (atualmente comentados): separar "Proponente" / "Gestor" como entradas de menu
-- [ ] Avaliar adicionar `lang="pt-BR"` em `app/layout.tsx` (atualmente `lang="en"`)
+- [ ] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx`
 
 #### 0.3 Página inicial — Hero (`components/HeroHome.tsx`)
 
-- [ ] Atualizar título e subtítulo do hero conforme nova identidade/nome do manual
+- [x] ~~Atualizar título e subtítulo do hero~~ — ✅ Título atualizado para **"Cult Editais"**, cores ajustadas para fundo claro (`!text-gray-900` / `!text-gray-700`), botão invertido (commit `90b77da`)
+- [x] ~~Trocar imagem de fundo `bg-home-hero.png`~~ — ✅ Nova imagem aplicada (commit `90b77da`)
 - [ ] Trocar link do botão "Introdução" (`/docs/usuarios/intro` → `/docs/proponente/intro`) — **depende da Fase 1**
-- [ ] Trocar imagem de fundo `bg-home-hero.png` se houver nova arte
+- [ ] Atualizar subtítulo do hero — ainda descreve "Rede das Artes", deve refletir o Cult Editais
 - [ ] Avaliar acrescentar botão secundário "Sou Gestor" direto no hero para atalho rápido
 
 #### 0.4 Página inicial — Cards de papéis (`components/FeaturedHome.tsx`)
 
-- [ ] Atualizar título "Proponentes" (confirmar nomenclatura oficial)
+- [x] ~~Remover card e importação de `developers.svg`~~ — ✅ Módulo desenvolvedores removido por completo (commit `9466b94`)
+- [x] ~~Atualizar título "Agentes Artísticos"~~ → ✅ Renomeado para **"Proponentes"** (commit `97e5a37`)
 - [ ] Atualizar título "Gestores" → "Gestor do Ente Federativo" ou nomenclatura definida
-- [ ] Atualizar descrições dos dois cards conforme novo foco do manual
+- [ ] Atualizar descrição do card Proponentes (atual: "divulgar agenda de circuitos artísticos" — rever foco para inscrição em editais)
+- [ ] Atualizar descrição do card Gestores (atual genérica — rever para ente federativo)
 - [ ] Atualizar links: `/docs/usuarios/intro` → `/docs/proponente/intro` e `/docs/gestores/intro` → `/docs/gestor/intro` — **depende da Fase 1**
-- [ ] Substituir ilustrações `agents.svg` e `managers.svg` se houver novas artes
-- [ ] Remover importação de `developers.svg` (arquivo importado mas nunca renderizado)
+- [ ] Avaliar substituição das ilustrações `agents.svg` e `managers.svg`
 
 #### 0.5 Rodapé (`components/Footer.tsx`)
 
-- [ ] Atualizar texto institucional (ano "2025" hardcoded — atualizar se necessário)
-- [ ] Confirmar se logo `SNC+PNAB+MinC+Gov.png` é a versão atual e correta
+- [x] ~~Simplificar rodapé com logo unificada~~ — ✅ 14 logos antigas removidas, `SNC+PNAB+MinC+Gov.png` centralizada (commit `d2fffeb`)
+- [ ] Confirmar se `SNC+PNAB+MinC+Gov.png` é a versão/ano correto para Cult Editais
+- [ ] Atualizar texto institucional (ainda menciona "Rede das Artes" e ano "2025" — revisar)
 - [ ] Avaliar acrescentar links úteis no rodapé (ex.: plataforma, repositório, suporte)
 
 #### 0.6 Tema e tipografia (`app/global.css` / `app/layout.tsx`)
 
-- [ ] Confirmar tema "Ocean" do Fumadocs UI — avaliar se mantém ou troca por outro tema ou customização própria
-- [ ] Avaliar substituir fonte `Inter` por fonte da identidade visual institucional (se houver)
-- [ ] Confirmar `lang="en"` → `lang="pt-BR"` em `app/layout.tsx`
+- [ ] Confirmar tema "Ocean" do Fumadocs UI — avaliar se mantém ou troca por customização visual do Cult Editais
+- [ ] Avaliar substituir fonte `Inter` por fonte da identidade visual do Cult Editais (se houver)
+- [ ] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx`
 
-#### 0.7 Hack de tradução (remover após Fase 0)
+#### 0.7 Hack de tradução (débito técnico)
 
 - [ ] Remover `useEffect` de tradução `Search → Buscar` em `app/(home)/layout.tsx` — substituir pela configuração nativa de i18n do Fumadocs quando disponível, ou manter documentado como débito técnico
+
+---
+
+> **Status da Fase 0:** 🟡 Em andamento — identidade visual principal concluída; pendências de textos, links e configurações globais
 
 ---
 
