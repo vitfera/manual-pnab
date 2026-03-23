@@ -453,12 +453,14 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] Adequar terminologia e fluxo para Cult Editais ✅ `97b7136`
 - [x] Atualizar `meta.json` e links em `intro.mdx` ✅ `97b7136`
 
-#### 5.4 `gerenciar-oportunidades.mdx`
+#### 5.4 `gerenciar-oportunidades.mdx` ✅ `d6aea6b`
 
-- [ ] Definir se mantém como está, desmembra em subpáginas ou reestrutura
-- [ ] Remover prefixos numéricos nos headings
-- [ ] Substituir "Rede das Artes" → "Cult Editais"
-- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+- [x] Remover prefixos numéricos nos headings ✅ `d6aea6b`
+- [x] Substituir "Rede das Artes" → "Cult Editais" ✅ `d6aea6b`
+- [x] Corrigir hierarquia de headings (## → ### para subitens) ✅ `d6aea6b`
+- [x] Remover seção duplicada de critérios de avaliação ✅ `d6aea6b`
+- [x] Remover placeholders `{/* */}` ✅ `d6aea6b`
+- [ ] Revisar conteúdo — verificar se precisa ser desmembrado em subpáginas
 
 #### 5.5 Novos arquivos (a criar)
 
