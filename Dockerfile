@@ -24,6 +24,9 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Limit Node.js memory to avoid OOM in constrained build environments
+ENV NODE_OPTIONS="--max-old-space-size=2048"
+
 # Execute fumadocs-mdx after copying all files
 RUN npx fumadocs-mdx
 
