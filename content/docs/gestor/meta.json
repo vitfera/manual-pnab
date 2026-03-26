@@ -6,6 +6,9 @@
         "intro",
         "conta",
         "criar-oportunidade",
-        "gerenciar-oportunidades"
+        "gerenciar-oportunidades",
+        "configuracao-fases",
+        "inscricoes-resultados",
+        "relatorios"
     ]
 }
