@@ -13,7 +13,6 @@ import LogoCultBR from '../public/img/cultbr-fundo-claro.png';
 import LogoCultBRDark from '../public/img/cultbr-fundo-escuro.png';
 
 export const baseOptions: BaseLayoutProps = {
-  githubUrl: 'https://github.com/redemapas/manual',
   nav: {
     title: (
       <>
