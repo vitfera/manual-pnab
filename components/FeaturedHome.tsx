@@ -2,40 +2,27 @@ import Image from 'next/image';
 
 import imgAgents from './img/home/agents.svg';
 import imgManagers from './img/home/managers.svg';
-import imgDevelopers from './img/home/developers.svg';
 
 const roles = [
   {
-    title: 'Agentes Artísticos',
+    title: 'Proponentes',
     image: imgAgents,
     alt: 'Pessoa dançando com o sol ao fundo',
     description:
-      'Pessoas que desejam divulgar a agenda de seus circuitos artísticos, eventos e outras oportunidades.',
-    link: '/docs/usuarios/intro',
+      'Agentes culturais, artistas e produtores que desejam se inscrever em editais da Política Nacional Aldir Blanc e gerenciar suas propostas.',
+    link: '/docs/proponente/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
     textColor: 'text-white',
     roundedClass: 'lg:rounded-l-[2rem]',
   },
   {
-    title: 'Gestores',
+    title: 'Gestores do Ente Federativo',
     image: imgManagers,
     alt: 'Pintora criando em tela com pincéis',
     description:
-      'Coordenação do processo de editais e iniciativas, publicação dos resultados e monitoramento da execução de editais.',
-    link: '/docs/gestores/intro',
-    linkText: 'Saiba mais',
-    bgColor: 'bg-blue-900',
-    textColor: 'text-white',
-    roundedClass: 'lg:rounded-l-[2rem]',
-  },
-  {
-    title: 'Desenvolvedores',
-    image: imgDevelopers,
-    alt: 'Equipe trabalhando com tecnologia e engrenagens',
-    description:
-      'Pessoa responsável por manter a infraestrutura e dar manutenção nas tecnologias digitais utilizadas pela Rede das Artes.',
-    link: '/docs/devs',
+      'Servidores de secretarias de cultura estaduais e municipais que publicam editais, avaliam inscrições e acompanham a execução dos projetos selecionados.',
+    link: '/docs/gestor/intro',
     linkText: 'Saiba mais',
     bgColor: 'bg-blue-900',
     textColor: 'text-white',
