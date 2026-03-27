@@ -1,6 +1,6 @@
 # Roadmap de Reestruturação — Manual Rede das Artes
 
-> **Criado em:** 16 de março de 2026 · **Atualizado em:** 22 de março de 2026  
+> **Criado em:** 16 de março de 2026 · **Atualizado em:** 27 de março de 2026  
 > **Base:** `LEVANTAMENTO.md`  
 > **Objetivo:** Reestruturar o manual para dois atores específicos: **Proponente** e **Gestor do Ente Federativo**  
 > **Nome do produto:** ~~Rede das Artes~~ → **Cult Editais** (renomeado em 19/03/2026)
@@ -69,22 +69,25 @@ O novo manual é **operacional e contextualizado** para dois atores específicos
 ### 3.2 Seção Gestor do Ente Federativo
 
 **Pasta atual:** `content/docs/gestores/`  
-**Ação:** ~~manter pasta, atualizar `meta.json`~~ → ✅ renomeada para `content/docs/gestor/` (commit `7732901`)
+**Ação:** ~~manter pasta, atualizar `meta.json`~~ → ✅ renomeada para `content/docs/gestor/` (commit `7732901`) e reorganizada por fluxo real do gestor (criação, configuração, inscrições/resultados e relatórios)
 
 | # | Arquivo | Situação | Ação | Observação |
 |---|---|---|---|---|
 | 1 | `intro.mdx` | ✅ existe | **Adaptar** | Generalizar de "Funarte" para "ente federativo"; descrever perfis de gestor (admin, moderador, etc.) |
-| 2 | `painel-controle.mdx` | ✅ existe | **Adaptar** | Manter estrutura; generalizar referências institucionais |
-| 3 | `gerenciar-oportunidades.mdx` | ✅ existe | **Expandir** | Já tem bastante conteúdo; verificar se precisa ser desmembrado |
-| 4 | `gerenciar-agentes.mdx` | ❌ não existe | **Criar** | Visualizar, aprovar, vincular e gerir agentes do território |
-| 5 | `gerenciar-espacos.mdx` | ❌ não existe | **Criar** | Visualizar, editar e publicar espaços culturais do território |
-| 6 | `gerenciar-eventos.mdx` | ❌ não existe | **Criar** | Visualizar, editar e publicar eventos do território |
-| 7 | `gerenciar-iniciativas.mdx` | ❌ não existe | **Criar** | Renomear de `gerenciar-projetos.mdx`; gerir iniciativas do território |
-| 8 | `relatorios-metricas.mdx` | ❌ não existe | **Criar** | Exportar dados, visualizar métricas, relatórios de oportunidades |
-| 9 | `configuracoes-plataforma.mdx` | ❌ não existe | **Criar** | Configurações gerais do painel gestor |
+| 2 | `conta.mdx` | ✅ existe | **Adaptar** | Documentar criação de conta, autenticação gov.br e seleção do ente federado |
+| 3 | `criar-oportunidade.mdx` | ✅ existe | **Adaptar** | Arquivo resultante da antiga `painel-controle.mdx`; focar no início do fluxo de criação |
+| 4 | `gerenciar-oportunidades.mdx` | ✅ existe | **Adaptar** | Mantida como visão geral do fluxo |
+| 5 | `configuracao-fases.mdx` | ✅ existe | **Criar por desmembramento** | Conteúdo extraído de `gerenciar-oportunidades.mdx` |
+| 6 | `inscricoes-resultados.mdx` | ✅ existe | **Criar por desmembramento** | Conteúdo extraído de `gerenciar-oportunidades.mdx` |
+| 7 | `relatorios.mdx` | ✅ existe | **Criar por desmembramento** | Conteúdo extraído de `gerenciar-oportunidades.mdx` |
+| 8 | `gerenciar-agentes.mdx` | ❌ não existe | **Criar** | Visualizar, aprovar, vincular e gerir agentes do território |
+| 9 | `gerenciar-espacos.mdx` | ❌ não existe | **Criar** | Visualizar, editar e publicar espaços culturais do território |
+| 10 | `gerenciar-eventos.mdx` | ❌ não existe | **Criar** | Visualizar, editar e publicar eventos do território |
+| 11 | `gerenciar-iniciativas.mdx` | ❌ não existe | **Criar** | Renomear de `gerenciar-projetos.mdx`; gerir iniciativas do território |
+| 12 | `configuracoes-plataforma.mdx` | ❌ não existe | **Criar** | Configurações gerais do painel gestor |
 | — | `---` | — | separador | — |
-| 10 | `duvidas-frequentes.mdx` | ✅ existe | **Revisar** | Atualizar com dúvidas reais do gestor |
-| 11 | `referencias.mdx` | ✅ existe | **Manter/revisar** | — |
+| 13 | `duvidas-frequentes.mdx` | ⏸️ removido por ora | **Reavaliar** | Fora da navegação atual |
+| 14 | `referencias.mdx` | ⏸️ removido por ora | **Reavaliar** | Fora da navegação atual |
 
 ---
 
@@ -121,7 +124,7 @@ O novo manual é **operacional e contextualizado** para dois atores específicos
 | Arquivo atual | Desmembrar em | Critério |
 |---|---|---|
 | `usuarios/home.mdx` | `proponente/conta.mdx` (criar conta, editar perfil, painel) + manter min. em `intro.mdx` (navegação básica) | Arquivo atual mistura: visão geral da home, criação de conta, edição de perfil e painel de controle — são assuntos distintos |
-| `gestores/gerenciar-oportunidades.mdx` | Avaliar se deve virar `configurar-oportunidade.mdx` + `avaliar-inscricoes.mdx` | O arquivo já cobre 3 fases (config, avaliação, resultados) com ~87 imagens; pode ficar pesado para um único MDX |
+| ~~`gestor/gerenciar-oportunidades.mdx`~~ | ✅ desmembrado em `gerenciar-oportunidades.mdx` + `configuracao-fases.mdx` + `inscricoes-resultados.mdx` + `relatorios.mdx` | Refatoração concluída no commit `f66c5d8` |
 
 ---
 
@@ -263,17 +266,12 @@ Para migrar as imagens atuais para o novo padrão:
   "root": true,
   "pages": [
     "intro",
-    "painel-controle",
+    "conta",
+    "criar-oportunidade",
     "gerenciar-oportunidades",
-    "gerenciar-agentes",
-    "gerenciar-espacos",
-    "gerenciar-eventos",
-    "gerenciar-iniciativas",
-    "relatorios-metricas",
-    "configuracoes-plataforma",
-    "---.---",
-    "duvidas-frequentes",
-    "referencias"
+    "configuracao-fases",
+    "inscricoes-resultados",
+    "relatorios"
   ]
 }
 ```
@@ -306,9 +304,9 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [x] ~~Definir e posicionar logo final na navbar~~ — ✅ Logo Cult Editais aplicada (commit `da480b9`): `cultbr-fundo-claro.png` / `cultbr-fundo-escuro.png`, título `<h1>Manual Cult Editais</h1>`
 - [x] ~~Confirmar título do site exibido na navbar~~ — ✅ Atualizado para **"Manual Cult Editais"** (commit `da480b9`)
-- [ ] Confirmar URL do GitHub (`githubUrl`) — atualmente ainda aponta para `redemapas/manual`, verificar se muda
+- [x] Remover link do GitHub do cabeçalho (`githubUrl`) ✅ `82b53a6`
 - [ ] Avaliar ativar os links de navegação superiores (atualmente comentados): separar "Proponente" / "Gestor" como entradas de menu
-- [ ] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx`
+- [x] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx` e centralizar traduções PT-BR no `RootProvider` ✅ `affd207`
 
 #### 0.3 Página inicial — Hero (`components/HeroHome.tsx`)
 
@@ -326,7 +324,7 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] Atualizar descrição do card Proponentes → foco em inscrição em editais PNAB ✅ `5ed3704`
 - [x] Atualizar descrição do card Gestores → servidores de secretarias estaduais/municipais ✅ `5ed3704`
 - [x] Atualizar links: `/docs/proponente/intro` e `/docs/gestor/intro` em `FeaturedHome.tsx` ✅ `5bc9279` / `7732901`
-- [ ] Avaliar substituição das ilustrações `agents.svg` e `managers.svg`
+- [x] Substituir as ilustrações `agents.svg` e `managers.svg` por ícones dedicados de Proponente e Gestor ✅ `4399704`
 
 #### 0.5 Rodapé (`components/Footer.tsx`)
 
@@ -339,15 +337,15 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [ ] Confirmar tema "Ocean" do Fumadocs UI — avaliar se mantém ou troca por customização visual do Cult Editais
 - [ ] Avaliar substituir fonte `Inter` por fonte da identidade visual do Cult Editais (se houver)
-- [ ] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx`
+- [x] Corrigir `lang="en"` → `lang="pt-BR"` em `app/layout.tsx` ✅ `affd207`
 
 #### 0.7 Hack de tradução (débito técnico)
 
-- [ ] Remover `useEffect` de tradução `Search → Buscar` em `app/(home)/layout.tsx` — substituir pela configuração nativa de i18n do Fumadocs quando disponível, ou manter documentado como débito técnico
+- [x] Remover `useEffect` de tradução `Search → Buscar` em `app/(home)/layout.tsx` e migrar para i18n via `RootProvider` ✅ `affd207`
 
 ---
 
-> **Status da Fase 0:** 🟡 Em andamento — identidade visual e textos principais concluídos; pendente: logo rodapé, links de navegação superiores, lang, tema e débito técnico de tradução
+> **Status da Fase 0:** 🟡 Em andamento — identidade visual, i18n PT-BR, ícones dos cards e textos principais concluídos; pendente: links de navegação superiores, revisão de tema/tipografia e validação final do rodapé
 
 ---
 
@@ -394,10 +392,12 @@ Para migrar as imagens atuais para o novo padrão:
 #### 4.3 `conta.mdx`
 
 - [x] Criar arquivo e estrutura inicial ✅ `b1b7c78`
-- [x] Documentar fluxo de login via gov.br (5 passos com imagens) ✅ `6d92f51`
+- [x] Documentar fluxo de login via gov.br ✅ `6d92f51`
 - [x] Documentar painel de controle com imagem ✅ `6d92f51`
+- [x] Adicionar etapa de autorização de compartilhamento do gov.br ✅ `a71acc0`
+- [x] Documentar termos de uso, política de privacidade e autorização de uso de imagem ✅ `32a0fcc`
+- [x] Documentar seção "Conta e Privacidade" ✅ `32a0fcc`
 - [ ] Documentar edição de informações do perfil (imagens pendentes)
-- [ ] Documentar seção "Conta e Privacidade"
 
 #### 4.4 `agentes.mdx` ✅ `c40ec68`
 
@@ -413,11 +413,13 @@ Para migrar as imagens atuais para o novo padrão:
 
 #### 4.5 `oportunidades.mdx`
 
-> ⏸️ **Adiado** — depende da seção Gestor (criação de oportunidades) ser documentada primeiro.
-
 - [x] Renomear de `opportunities.mdx` ✅ `b1b7c78`
 - [x] Atualizar referências de imagens para `04_oportunidades/` ✅ `5164d20`
-- [ ] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais
+- [x] Revisar conteúdo — adequar terminologia e fluxo para Cult Editais ✅ `b3c7bb0`
+- [x] Atualizar fluxo de acesso via página inicial (bloco de Editais) ✅ `6570a22`
+- [x] Adicionar imagens do fluxo principal de inscrição em `04_oportunidades/` ✅ `dfd1d0f`
+- [ ] Documentar ficha de inscrição após o envio (há placeholder `[imagem]`)
+- [ ] Revisar imagens legadas em `04_oportunidades/03_01/` e `04_oportunidades/03_02/`
 
 ---
 
@@ -442,8 +444,11 @@ Para migrar as imagens atuais para o novo padrão:
 #### 5.2b `conta.mdx` ✅ `2421d59`
 
 - [x] Criar arquivo a partir do fluxo de login via gov.br ✅ `2421d59`
-- [x] Documentar fluxo de login (5 passos com imagens) ✅ `2421d59`
+- [x] Documentar fluxo de login via gov.br ✅ `2421d59`
 - [x] Adicionar imagens em `gestor/img/02_conta/` ✅ `2421d59`
+- [x] Adicionar etapa de autorização de compartilhamento do gov.br ✅ `a71acc0`
+- [x] Documentar termos de uso, política de privacidade e autorização de uso de imagem ✅ `32a0fcc`
+- [x] Documentar seleção do ente federado antes do acesso ao painel ✅ `162af0a`
 
 #### 5.3 ~~`painel-controle.mdx`~~ → `criar-oportunidade.mdx` ✅ `97b7136`
 
@@ -460,15 +465,29 @@ Para migrar as imagens atuais para o novo padrão:
 - [x] Corrigir hierarquia de headings (## → ### para subitens) ✅ `d6aea6b`
 - [x] Remover seção duplicada de critérios de avaliação ✅ `d6aea6b`
 - [x] Remover placeholders `{/* */}` ✅ `d6aea6b`
-- [ ] Revisar conteúdo — verificar se precisa ser desmembrado em subpáginas
+- [x] Desmembrar conteúdo por abas em páginas separadas ✅ `f66c5d8`
 
-#### 5.5 Novos arquivos (a criar)
+#### 5.4b `configuracao-fases.mdx` ✅ `f66c5d8`
+
+- [x] Criar página dedicada para a aba de configuração de fases ✅ `f66c5d8`
+- [x] Atualizar `meta.json` com a nova navegação ✅ `f66c5d8`
+
+#### 5.4c `inscricoes-resultados.mdx` ✅ `f66c5d8`
+
+- [x] Criar página dedicada para acompanhamento de inscrições e resultados ✅ `f66c5d8`
+- [x] Reaproveitar imagens existentes da aba correspondente ✅ `f66c5d8`
+
+#### 5.4d `relatorios.mdx` ✅ `f66c5d8`
+
+- [x] Criar página dedicada para relatórios da oportunidade ✅ `f66c5d8`
+- [x] Reaproveitar imagens existentes da aba correspondente ✅ `f66c5d8`
+
+#### 5.5 Novos arquivos pendentes
 
 - [ ] `gestor/gerenciar-agentes.mdx` — capturar imagens + escrever
 - [ ] `gestor/gerenciar-espacos.mdx` — capturar imagens + escrever
 - [ ] `gestor/gerenciar-eventos.mdx` — capturar imagens + escrever
 - [ ] `gestor/gerenciar-iniciativas.mdx` — capturar imagens + escrever
-- [ ] `gestor/relatorios-metricas.mdx` — capturar imagens + escrever
 - [ ] `gestor/configuracoes-plataforma.mdx` — capturar imagens + escrever
 
 ---
@@ -477,6 +496,7 @@ Para migrar as imagens atuais para o novo padrão:
 
 - [ ] Padronizar terminologia global: "iniciativa" (não "projeto"), "proponente" (não "usuário"), "gestor do ente" (não "gestor cultural" genericamente)
 - [ ] Revisar metadados de cada página (`title`, `description` no frontmatter MDX) — proponente e gestor
+- [ ] Revisar e limpar pastas/imagens legadas que ficaram fora do padrão novo (`03_oportunidades/`, `02_painel/`, subpastas antigas do proponente)
 - [ ] Atualizar `README.md` com conteúdo real do projeto
 - [ ] Testar build completo
 - [ ] Verificar busca full-text nas novas rotas
