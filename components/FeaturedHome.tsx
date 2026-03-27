@@ -1,13 +1,13 @@
 import Image from 'next/image';
 
-import imgAgents from './img/home/agents.svg';
-import imgManagers from './img/home/managers.svg';
+import iconProponente from './img/home/icon-proponente.svg';
+import iconGestor from './img/home/icon-gestor.svg';
 
 const roles = [
   {
     title: 'Proponentes',
-    image: imgAgents,
-    alt: 'Pessoa dançando com o sol ao fundo',
+    image: iconProponente,
+    alt: 'Ícone de agente cultural proponente',
     description:
       'Agentes culturais, artistas e produtores que desejam se inscrever em editais da Política Nacional Aldir Blanc e gerenciar suas propostas.',
     link: '/docs/proponente/intro',
@@ -18,8 +18,8 @@ const roles = [
   },
   {
     title: 'Gestores do Ente Federativo',
-    image: imgManagers,
-    alt: 'Pintora criando em tela com pincéis',
+    image: iconGestor,
+    alt: 'Ícone de gestor do ente federativo',
     description:
       'Servidores de secretarias de cultura estaduais e municipais que publicam editais, avaliam inscrições e acompanham a execução dos projetos selecionados.',
     link: '/docs/gestor/intro',
