@@ -156,24 +156,22 @@ Se necessário, clique em **Adicionar Cota** para incluir novas configurações.
 <a id="configurar-formulario"></a>
 ## Configurar formulário
 
-O bloco **Configurar formulário** define quais informações e documentos serão solicitados dos proponentes durante a inscrição.
+O bloco **Configuração de formulário de coleta de dados** define quais informações e documentos serão solicitados dos proponentes durante a inscrição.
 
-![](./img/05_configuracao-fases/08_configurar-formulario.jpg)
+![](./img/05_configuracao-fases/08_01_configurar-formulario.jpg)
 
 Com ele, você pode:
 
-- criar campos personalizados
-- solicitar documentos obrigatórios
-- incluir perguntas objetivas e discursivas
 - organizar o formulário em etapas
-
-![](./img/04_gerenciar-oportunidades/03_02_config_form_coleta.jpg)
+- criar campos personalizados
+- criar campos de upload para documentos
+- incluir perguntas objetivas e discursivas
 
 ### Importar formulário
 
 Se você já usou um formulário semelhante em outra oportunidade, pode reaproveitá-lo pela opção **Importar Formulário**.
 
-![](./img/04_gerenciar-oportunidades/03_02_import_form_coleta.jpg)
+![](./img/05_configuracao-fases/08_02_importar.jpg)
 
 Depois da importação, os campos continuam editáveis.
 
@@ -184,6 +182,7 @@ Para reaproveitar um formulário de outra oportunidade:
 1. Acesse a oportunidade de origem.
 2. Vá até `Configuração de Fases > Período de Inscrição > Configurar Formulário`.
 3. Exporte o arquivo do formulário.
+![](./img/05_configuracao-fases/08_03_exportar.jpg)
 4. Volte à nova oportunidade e use a opção **Importar**.
 
 O sistema gera um arquivo no formato `opportunity-XXXX-fields.txt`.
@@ -192,19 +191,11 @@ O sistema gera um arquivo no formato `opportunity-XXXX-fields.txt`.
 
 Além dos campos criados manualmente, a plataforma permite habilitar alguns campos prontos.
 
-#### Vínculo de espaço
+![](./img/05_configuracao-fases/08_04_opcionais.jpg)
 
-Permite que o proponente associe a inscrição a um espaço cultural cadastrado.
+#### Habilitar campo para vínculo de espaço
 
-Opções:
-
-- **Desabilitado**
-- **Obrigatório**
-- **Opcional**
-
-#### Nome do projeto
-
-Permite que o proponente informe um nome para a proposta inscrita.
+Permite que o proponente selecione um espaço para associar à inscrição.
 
 Opções:
 
@@ -212,16 +203,26 @@ Opções:
 - **Obrigatório**
 - **Opcional**
 
-#### Imagem de perfil
+#### Habilitar campo de nome de projeto
 
-Permite solicitar uma imagem de perfil durante a inscrição.
+Permite que o inscrito dê nome a um projeto no momento da inscrição.
+
+Opções:
+
+- **Desabilitado**
+- **Obrigatório**
+- **Opcional**
+
+#### Habilitar solicitação de imagem de perfil
+
+Solicita a imagem de perfil do agente individual cadastrado na plataforma e responsável pela inscrição.
 
 Opções:
 
 - **Desabilitado**
 - **Habilitado**
 
-#### Pergunta sobre cotas
+#### Habilitar pergunta "Vai concorrer às cotas"
 
 Permite incluir no formulário a pergunta **“Vai concorrer às cotas?”**, quando a seleção adotar ações afirmativas.
 
@@ -235,15 +236,15 @@ Opções:
 <a id="etapas-campos-formulario"></a>
 ## Etapas e campos do formulário
 
-O formulário de inscrição pode ser organizado em etapas, o que ajuda a estruturar melhor o preenchimento e a leitura pelos avaliadores.
+O formulário de inscrição pode ser organizado em etapas, o que ajuda a estruturar melhor o preenchimento e a leitura pelos proponentes.
 
-![](./img/04_gerenciar-oportunidades/03_02_config_etapas_campos.jpg)
+![](./img/05_configuracao-fases/08_05_01_etapas.jpg)
 
 ### Etapas
 
 As etapas funcionam como blocos do formulário, agrupando perguntas por assunto.
 
-![](./img/04_gerenciar-oportunidades/03_02_criar_etapa.jpg)
+![](./img/05_configuracao-fases/08_05_02_nova-etapa.jpg)
 
 Exemplos comuns:
 
@@ -258,17 +259,17 @@ As etapas podem ser criadas, editadas, reordenadas ou removidas conforme a neces
 
 Os campos são os itens preenchidos dentro de cada etapa do formulário.
 
-![](./img/04_gerenciar-oportunidades/03_02_preencher_campo.jpg)
+![](./img/05_configuracao-fases/08_06_campos.jpg)
 
-Eles podem ser usados para coletar:
+Na prática, os campos permitem ao gestor definir que tipo de informação será solicitada na inscrição, como:
 
 - textos curtos e longos
 - números e valores
 - datas
-- documentos
+- documentos para upload
 - links
 - opções de seleção
-- dados de pessoas, agentes e espaços
+- dados de pessoas e agentes
 
 ### Síntese dos campos disponíveis
 
@@ -318,7 +319,7 @@ Na configuração do formulário, há diversos tipos de campos disponíveis para
 
 Para inserir um novo campo, clique em **Adicionar campo**.
 
-![](./img/04_gerenciar-oportunidades/03_02_add_campo.jpg)
+![](./img/05_configuracao-fases/08_07_01_adicionar-campo.jpg)
 
 Ao adicionar um campo, a plataforma abre uma caixa de configuração com os itens principais:
 
@@ -328,9 +329,41 @@ Ao adicionar um campo, a plataforma abre uma caixa de configuração com os iten
 - **Obrigatoriedade**
 - **Definição por tipo de proponente**
 
-![](./img/04_gerenciar-oportunidades/03_02_config_campo.jpg)
+Algumas opções de configuração podem mudar de acordo com o tipo de campo escolhido.
 
-![](./img/04_gerenciar-oportunidades/03_02_etapa_projeto.jpg)
+Você também pode marcar se deseja que esse campo dependa da resposta de outro campo do formulário. Isso é útil em situações como **"outras opções"**, em que o campo só deve aparecer quando uma resposta específica for selecionada.
+
+![](./img/05_configuracao-fases/08_07_02_novo-campo.jpg)
+
+### Adicionar anexo
+
+Para inserir um novo anexo, clique em **Adicionar anexo**.
+
+![](./img/05_configuracao-fases/08_08_01_adicionar_anexo.jpg)
+
+Ao adicionar um anexo, a plataforma abre uma caixa de configuração com campos semelhantes aos do cadastro de um novo campo.
+
+- **Nome do anexo**
+- **Descrição do campo**
+- **Tipo de campo**
+- **Obrigatoriedade**
+- **Definição por tipo de proponente**
+- dependência da resposta de outro campo do formulário
+- tipos de arquivo permitidos
+
+Você também pode marcar se deseja que esse campo dependa da resposta de outro campo do formulário. Isso é útil em situações como **"outras opções"**, em que o anexo só deve aparecer quando uma resposta específica for selecionada.
+
+No campo **Tipos de arquivo permitidos**, é possível deixar em branco para permitir todos os formatos ou restringir o envio para tipos específicos, como:
+
+- **Documentos**: `.doc`, `.docx`, `.odt`, `.pdf`, `.txt`
+- **Planilhas**: `.xls`, `.xlsx`, `.ods`, `.csv`
+- **Apresentações**: `.ppt`, `.pptx`, `.odp`
+- **Imagens**: `.jpg`, `.jpeg`, `.png`, `.gif`
+- **Arquivos compactados**: `.zip`, `.rar`
+- **Vídeos**: `.mp4`, `.avi`, `.mov`
+- **Áudios**: `.mp3`, `.wav`
+
+![](./img/05_configuracao-fases/08_08_02_novo-anexo.jpg)
 
 ---
 
