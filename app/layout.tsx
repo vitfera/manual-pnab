@@ -1,6 +1,7 @@
 import './global.css';
 import { RootProvider } from 'fumadocs-ui/provider/next';
 import { Inter } from 'next/font/google';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
@@ -40,7 +41,16 @@ export const metadata: Metadata = {
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR" className={inter.className} suppressHydrationWarning>
-        <body className="flex flex-col min-h-screen" suppressHydrationWarning>
+      <body className="flex flex-col min-h-screen" suppressHydrationWarning>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-DT0EVCZ0KY" />
+        <Script id="google-analytics-init">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-DT0EVCZ0KY');
+          `}
+        </Script>
         <RootProvider i18n={{ locale: 'pt-BR', translations: ptBR }}>{children}</RootProvider>
       </body>
     </html>
